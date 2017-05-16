@@ -1,0 +1,21 @@
+<div class="middle">
+  <leaflet id="mainmap" maxbounds="maxbounds" defaults="defaults" lf-center="center" paths="path" layers="layers" watch-markers="no" event-broadcast="events" class="angular-google-map-container"></leaflet>
+</div>
+
+<div class="gmnoprint custom-control-container">
+  <div class="gm-style-mtc">
+    <div ng-click="changeModel('neighbourhood')" class="custom-control" ng-class="{'selected': isActive('neighbourhood')}" title="Click to change to Neighbourhood Map">Neighbourhoods</div>
+    <div ng-click="changeModel('venue')" class="custom-control" ng-class="{'selected': isActive('venue')}" title="Click to change to Venue Based Model">Venue Based Model</div>
+    <div ng-click="changeModel('user')" class="custom-control" ng-class="{'selected': isActive('user')}" title="Click to change to User Based Model">User Based Model</div>
+  </div>
+</div>
+
+<div class="gmnoprint custom-control-container">
+  <div class="gm-style-mtc">
+    <div ng-click="options()" class="custom-control" title="Hide/Show Options Menu">Options</div>
+  </div>
+</div>
+
+
+<div class="selectdetails">
+</div>

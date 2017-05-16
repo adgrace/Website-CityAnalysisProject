@@ -1,0 +1,122 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/*
+body {
+  padding: 0;
+}
+*/
+/* Google Maps */
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+  display:none;
+}
+.leaflet-control-attribution{
+  display:none;
+}
+
+#mainmap {
+  z-index: 1;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.angular-google-map-container {
+  height: calc(100% - #{$navbar-height} - 2px);
+  width: 100%;
+  position: absolute;
+}
+
+.middle {
+  display: table;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+
+//Selected Details
+.selectdetails {
+  margin: 5px;
+  float: left;
+}
+
+
+//Options and Model Selector
+.custom-control-container {
+  margin: 5px;
+  float: right;
+  clear: right;
+  z-index: 2;
+}
+.custom-control {
+  transition: background-color 0.2s ease;
+  width: 120px;
+  cursor: pointer;
+  direction: ltr;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  color: rgb(143,143,143);
+  font-family: "Roboto", Arial, sans-serif;
+  -webkit-user-select: none;
+  font-size: 11px !important;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 8px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  min-width: 28px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.custom-control:hover {
+  //font-weight: 900 !important;
+  transition: background-color 0.2s ease;
+  background-color: rgb(235,235,235);
+  color: rgb(0,0,0);
+}
+
+.custom-control:focus {
+  outline:none !important;
+}
+
+
+.selected {
+  font-weight: 900 !important;
+  transition: background-color 0.2s ease;
+  background-color: rgb(235,235,235);
+  color: rgb(0,0,0);
+}
+
+.ui-select-search {
+  width: 100px !important;
+}
+
+.dropdown-menu {
+  min-width: 50px;
+}
+
+.navbar-form .input-group .form-control {
+  width: 100px !important;
+}
+
